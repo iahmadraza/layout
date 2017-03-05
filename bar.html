@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- MICROSOFT -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- APPLE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=8; IE=9">
+		
+		<title>Bar - Layout Test</title>
+		<style type="text/css">
+			section {
+			    width: 100%;
+			    /*height: 200px;*/
+			    background: aqua;
+			}
+			div#one {
+			    width: 15%;
+			    height: 200px; /* //equals bar heigth = yaxis */
+			    background: red;
+			    float: left;
+			}
+			div#two {
+			    margin-left: 15%;
+			    /*height: 200px;*/
+			    background: black;
+			}
+			
+			ul {list-style:none;display:flex;margin:0;padding:0;}
+			ul {padding-bottom:50px;}
+			ul li {color:white;display:block;flex-grow:1;}
+			li {position:relative;}
+			ul li div {background:#444;width:22px;height:200px;text-align:center;margin:0 auto;position:relative;}
+			ul li div main {
+			  position: absolute;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  height: 40%;
+			  background: blue;
+			  /*filter: grayscale(1);*/
+			}
+			ul li div.selected main {
+			  transform: scale(1.4);
+			  transform-origin: 50% 80%;
+			  /*filter: grayscale(0);*/
+			}
+			ul li h1 {
+				font-size: 20px;
+			}
+			
+			ul li footer h1 {
+				padding: 0;
+			}
+			ul li footer em {
+				font-style: normal;
+				text-align: center;
+				display: block;
+			}
+			ul li {
+				background-size: 1px 36px;
+				background-image: -webkit-linear-gradient(to bottom, #ccc 1px, transparent 1px);
+				background-image: linear-gradient(to bottom, #ccc 1px, transparent 1px);
+				background-position: left bottom;
+				border-bottom: 1px solid #ccc;
+			}
+			ul li h1 {
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Layout Test - across all browsers &amp; devices</h1>
+		<div class="container">
+		<section>
+		    <div id="one">1</div><!--//.one-->
+		    <div id="two">
+		      <ul>
+			      <li>
+			      	<div>
+			      		<main style="height:100%;">
+			      			<em>7</em>
+			      		</main>
+			      	</div>
+			      	<h1>100</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:110%;">
+			      			<em>8</em>
+			      		</main>
+			      	</div>
+			      	<h1>Rs. 15000</h1>
+			      </li>
+			      <li>
+			      	<div class="selected1">
+			      		<main style="height:30%;">
+			      			<em>6</em>
+			      		</main>
+			      	</div>
+			      	<h1>$ 400</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:80%;">
+			      			<em>80</em>
+			      		</main>
+			      	</div>
+			      	<h1>5</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:10%;">
+			      			<em>10</em>
+			      		</main>
+			      	</div>
+			      	<h1>GBP 5000</h1>
+			      </li>
+		      </ul>
+		    </div>
+		</section>
+		</div><!--//.container-->
+		
+		
+		<hr />
+		<hr />
+		
+		<div class="container">
+		<section>
+		    <div id="one">1</div><!--//.one-->
+		    <div id="two">
+		      <ul>
+			      <li>
+			      	<div>
+			      		<main style="height:100%;">
+			      			<em>7</em>
+			      		</main>
+			      	</div>
+			      	<h1>100</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:110%;">
+			      			<em>8</em>
+			      		</main>
+			      	</div>
+			      	<h1>1000</h1>
+			      </li>
+			      <li>
+			      	<div class="selected1">
+			      		<main style="height:30%;">
+			      			<em>6</em>
+			      		</main>
+			      	</div>
+			      	<h1>1400</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:80%;">
+			      			<em>80</em>
+			      		</main>
+			      	</div>
+			      	<h1>5</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:10%;">
+			      			<em>10</em>
+			      		</main>
+			      	</div>
+			      	<h1>5000</h1>
+			      </li>
+		      </ul>
+		    </div>
+		</section>
+		</div><!--//.container-->
+		
+		<hr />
+		<hr />
+		
+		<div class="container" style="display:none">
+		<section>
+		    <div id="one">1</div>
+		    <div id="two">
+		      <ul>
+			      <li>
+			      	<div>
+			      		<main style="height:100%;">
+			      			<em>7</em>
+			      		</main>
+			      	</div>
+			      	<h1>100</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:110%;">
+			      			<em>8</em>
+			      		</main>
+			      	</div>
+			      	<h1>Rs. 15000</h1>
+			      </li>
+			      <li>
+			      	<div class="selected1">
+			      		<main style="height:30%;">
+			      			<em>6</em>
+			      		</main>
+			      	</div>
+			      	<h1>$ 400</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:80%;">
+			      			<em>80</em>
+			      		</main>
+			      	</div>
+			      	<h1>5</h1>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:10%;">
+			      			<em>10</em>
+			      		</main>
+			      	</div>
+			      	<h1>GBP 5000</h1>
+			      </li>
+		      </ul>
+		    </div>
+		</section>
+		<section>
+		    <div id="one">1</div>
+		    <div id="two">
+		      <ul>
+			      <li><h1>100%</h1></li>
+			      <li><h1>200Rs</h1></li>
+			      <li><h1>$300</h1></li>
+			      <li><h1>GBP4000</h1></li>
+			      <li><h1>500</h1></li>
+		      </ul>
+		    </div>
+		</section>
+		</div><!--//.container-->
+		
+		<hr />
+		<hr />
+		
+		<div class="container" style="display:none">
+		<section>
+		    <div id="one">1</div>
+		    <div id="two">
+		      <ul>
+			      <li>
+			      	<div>
+			      		<main style="height:100%;">
+			      			<em>7</em>
+			      		</main>
+			      	</div>
+			      	<footer>
+		      			<h1>GBP 5000</h1>
+		      			<em>October</em>
+		      		</footer>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:110%;">
+			      			<em>8</em>
+			      		</main>
+			      	</div>
+			      	<footer>
+		      			<h1>200%</h1>
+		      			<em>October</em>
+		      		</footer>
+			      </li>
+			      <li>
+			      	<div class="selected1">
+			      		<main style="height:30%;">
+			      			<em>6</em>
+			      		</main>
+			      	</div>
+			      	<footer>
+		      			<h1>100 $</h1>
+		      			<em>October</em>
+		      		</footer>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:80%;">
+			      			<em>80</em>
+			      		</main>
+			      	</div>
+		      		<footer>
+		      			<h1>$ 5000</h1>
+		      			<em>October</em>
+		      		</footer>
+			      </li>
+			      <li>
+			      	<div>
+			      		<main style="height:10%;">
+			      			<em>10</em>
+			      		</main>
+			      	</div>
+			      	<footer>
+			      		<h1>Rs. 25,000/-</h1>
+			      		<em>October</em>
+			      	</footer>
+			      </li>
+		      </ul>
+		    </div>
+		</section>
+		</div><!--//.container-->
+		
+		<style type="text/css">
+			* {margin: 0;padding: 0;font-family: 'Segoe UI';}
+			h1 {font-weight:100;text-align:center;padding:20px 0;}
+			.container {width:80%;padding:100px 0;margin:0 auto;}
+			@media (max-width: 413px) {
+				.container {
+					width: 100%;
+					padding: 100px 0px;
+				}
+			}
+			ul li h1::after {
+				content: '%';
+				font-size: 10px;
+				vertical-align: top;
+				margin-top: 5px;
+			}
+		</style>
+	</body>
+</html>
